@@ -1,0 +1,55 @@
+body{
+    background-color: #C7C3C5;
+}
+.screen{
+    width: 80%;
+    height: 6%;
+    text-align: right;
+    font-size: 30px;
+    position: absolute;
+    left:10%;
+    top: 7%;
+    border: 1px solid black;
+}
+.function1{
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    height: 30%;
+    text-align: center;
+}
+.number{
+    height: 100%;
+    width: 15%;
+    display: inline;
+    margin: 2%;
+}
+.number input{
+    height: 30%;
+    width: 10%;
+    background-color: #FAFAFA;
+    font-size: 25px;
+    margin: 0;
+    
+}
+.function2{
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    height: 30%;
+    text-align: center;
+}
+.function3{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 30%;
+    text-align: center;
+}
+.function4{
+    position: absolute;
+    top: 65%;
+    width: 100%;
+    height: 30%;
+    text-align: center;
+}

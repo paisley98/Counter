@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>简单计算器</title>
+        <meta name="valueport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/style.css">
+        <script type="text/javascript" src="./js/input.js"></script>
+    </head>
+    <body>
+        <form name="calculator">
+        <div class="page">
+            <div class="sections">
+                <section class="value">
+                    <input class="screen" type="text" name="screen" readonly id="display">
+                </section>
+                <section class="function1">
+                    <figure class="number">
+                        <input type="button" value="1"  class="btn number" onclick="get(this.value);">
+                    </figure>
+                    <figure class="number">
+                        <input type="button" value="2" class="btn number" onclick="get(this.value);">
+                    </figure>
+                    <figure class="number">
+                            <input type="button" value="3" class="btn number" onclick="get(this.value);">
+                    </figure>
+                    <figure class="number">
+                            <input type="button" value="4" class="btn number" onclick="get(this.value);">
+                    </figure>
+                    <figure class="number">
+                            <input type="button" value="5" class="btn number" onclick="get(this.value);">
+                        </figure>
+                </section>
+                <section class="function2">
+                        <figure class="number">
+                            <input type="button" value="6" class="btn number" onclick="get(this.value);">
+                        </figure>
+                        <figure class="number">
+                            <input type="button" value="7" class="btn number" onclick="get(this.value);">
+                        </figure>
+                        <figure class="number">
+                                <input type="button" value="8" class="btn number" onclick="get(this.value);">
+                        </figure>
+                        <figure class="number">
+                                <input type="button" value="9" class="btn number" onclick="get(this.value);">
+                        </figure>
+                        <figure class="number">
+                                <input type="button" value="0" class="btn number" onclick="get(this.value);">
+                            </figure>
+                    </section>
+                    <section class="function3">
+                            <figure class="number">
+                                <input type="button" value="+" class="btn operator" onclick="get(this.value);">
+                            </figure>
+                            <figure class="number">
+                                <input type="button" value="-" class="btn operator" onclick="get(this.value);">
+                            </figure>
+                            <figure class="number">
+                                    <input type="button" value="*" class="btn operator" onclick="get(this.value);">
+                            </figure>
+                            <figure class="number">
+                                    <input type="button" value="/" class="btn operator" onclick="get(this.value);">
+                            </figure>
+                            <figure class="number">
+                                    <input type="button" value="." class="btn operator" onclick="get(this.value);">
+                                </figure>
+                        </section>
+                        <section class="function4">
+                                <figure class="number">
+                                        <input type="button" value="=" class="btn other" onclick="calculates();">
+                                    </figure>
+                                    <figure class="number">
+                                        <input type="button" value="C" class="btn other" id="clear"/>
+                                    </figure>
+                            </section>
+            </div>
+        </div>
+    </form>
+    </body>
+</html>
+<script>
+    document.getElementById("clear").addEventListener("click", function() {
+	document.getElementById("display").value = "";
+});
+</script>
